@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.WebDriverTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-22T09:00:26" hostname="SD-02081.local" time="2.203">
-  <properties/>
-  <testcase name="WDtest()" classname="tests.WebDriverTest" time="2.203"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[окт. 22, 2024 12:00:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 126; Please update to a Selenium version that supports CDP version 129
-]]></system-err>
-</testsuite>
