@@ -18,7 +18,7 @@ public class ProjectConfiguration {
         Configuration.timeout = 30000;
         Configuration.pageLoadStrategy = "eager";
         if (webConfig.isRemote()) {
-            Configuration.remote = webConfig.remoteUrl();
+            Configuration.remote = String.valueOf(webConfig.remoteUrl());
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);

@@ -14,16 +14,12 @@ import java.net.URL;
 public interface WebConfig extends Config {
 
     @Key("baseUrl")
-//    @DefaultValue("https://github.com")
+    @DefaultValue("https://github.com")
     String getBaseUrl();
 
     @Key("browser")
     @DefaultValue("CHROME")
     Browser getBrowser();
-
-//    @Key("remoteUrl")
-//    @DefaultValue("http://localhost:4444")
-//    URL getRemoteUrl();
 
     @Key("browserVersion")
     String browserVersion();
@@ -31,10 +27,11 @@ public interface WebConfig extends Config {
     @Key("browserSize")
     String browserSize();
 
-//    @Key("baseUrl")
-//    String baseUrl();
     @Key("isRemote")
+    @DefaultValue("false")
     boolean isRemote();
+
     @Key("remoteUrl")
-    String remoteUrl();
+    @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
+    URL remoteUrl();
 }
