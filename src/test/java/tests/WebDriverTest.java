@@ -25,7 +25,7 @@ public class WebDriverTest extends TestBase{
     @Test
     public void WDtest() {
         String title = driver.getTitle();
-        assertEquals("GitHub: Let’s build from here · GitHub", title);
+        assertEquals("GitHub · Build and ship software on a single, collaborative platform · GitHub", title);
         driver.quit();
     }
 }
